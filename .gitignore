@@ -1,0 +1,12 @@
+.settings
+.project
+*.class
+# Package Files #
+*.jar
+*.war
+*.ear
+.idea
+/bin/
+/bin/
+/bin/
+*.log
