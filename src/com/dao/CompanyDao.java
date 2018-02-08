@@ -127,7 +127,7 @@ public class CompanyDao {
     
     public void importFromCSV(String file) {
         try {
-        	String csvFile = "C:\\\\Workspace\\\\company_data_sample_abstract_schema.csv";
+        	String csvFile = "C:\\\\Workspace\\\\company_data.csv";
             String loadQuery = "LOAD DATA LOCAL INFILE '"+ csvFile+"' INTO TABLE companies FIELDS TERMINATED BY ',' ENCLOSED BY '\"' LINES TERMINATED BY '\\n' IGNORE 1 LINES (CORPORATE_IDENTIFICATION_NUMBER,@var,COMPANY_NAME,COMPANY_STATUS,COMPANY_CLASS,COMPANY_CATEGORY,AUTHORIZED_CAPITAL,PAIDUP_CAPITAL," + 
             		"REGISTERED_STATE,REGISTRAR_OF_COMPANIES,PRINCIPAL_BUSINESS_ACTIVITY,REGISTERED_OFFICE_ADDRESS,SUB_CATEGORY) SET DATE_OF_REGISTRATION = STR_TO_DATE(@var, '%d-%m-%Y')\r\n";
             //System.out.println(loadQuery);
