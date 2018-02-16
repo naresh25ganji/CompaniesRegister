@@ -5,6 +5,17 @@ create database companyDB using below 2 steps
 create database CompanyDB;
 use CompanyDB;
 
+CREATE TABLE CompanyDB.`users` (
+  `USERNAME` varchar(25) NOT NULL,
+  `PASSWORD` varchar(25) NOT NULL,
+  PRIMARY KEY (`USERNAME`)
+)
+
+INSERT INTO users(USERNAME,PASSWORD) 
+VALUES('admin','test1234')
+
+select * from users;
+
 create companies table:
 
 CREATE TABLE CompanyDB.`companies` (

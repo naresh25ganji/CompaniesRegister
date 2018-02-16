@@ -20,7 +20,7 @@ public class CompanyDao {
     }
 	
 
-    public void addCompany(Company company) {
+	public void addCompany(Company company) {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("insert into companies(CORPORATE_IDENTIFICATION_NUMBER,DATE_OF_REGISTRATION,COMPANY_NAME,COMPANY_STATUS,COMPANY_CLASS,COMPANY_CATEGORY,AUTHORIZED_CAPITAL,PAIDUP_CAPITAL," + 

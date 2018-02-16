@@ -7,8 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Show All Companies</title>
+<link rel="stylesheet" href="css/listCompany.css" type="text/css"></link>
 </head>
 <body>
+<p><a href="CompanyController?action=home">Home</a></p>
    <table border=1>
         <thead>
             <tr>

@@ -1,0 +1,43 @@
+html {
+	font-family: "Open Sans", "Noto Sans", tahoma, arial, sans-serif;
+	font-size: 12px;
+}
+
+body {
+	background: #BEBEBE;
+	box-sizing: border-box;
+}
+
+.title {
+	text-align: center;
+}
+
+.breadcrumb {
+	margin-left: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: #23527c;
+	text-decoration: underline;
+}
+
+form {
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.data {
+	margin: 20px 0px;
+}
+
+input {
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}

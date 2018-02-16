@@ -20,6 +20,7 @@ public class CompanyController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static String INSERT_OR_EDIT = "/company.jsp";
 	private static String LIST_COMPANY = "/listCompany.jsp";
+	private static String HOME = "/index.jsp";
 	private CompanyDao dao;
        
     public CompanyController() {
@@ -50,6 +51,8 @@ public class CompanyController extends HttpServlet {
         	dao.importFromCSV("test");
         	forward = LIST_COMPANY;
             request.setAttribute("companies", dao.getAllCompanies()); 
+        } else if(action.equalsIgnoreCase("home")){
+        	forward = HOME;
         } else {
        
             forward = INSERT_OR_EDIT;

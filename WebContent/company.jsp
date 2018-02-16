@@ -10,7 +10,8 @@
 	href="css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
-<title>Insert title here</title>
+<title>Add Company</title>
+<link rel="stylesheet" href="css/company.css" type="text/css"></link>
 </head>
 <body>
 	<script>
@@ -19,9 +20,19 @@
 		});
 	</script>
 	
+	<div class="title">
+	<h1>Add New Company</h1>
+	</div>
+	<div class="breadcrumb">
+	<a href="CompanyController?action=home">Home</a>
+	/ Add Company
+	</div>
+	
 	<form method="POST" action='CompanyController' name="frmAddCompany">
-		Company Corporate ID : <input type="text" readonly="readonly"
-			name="companyid" value="<c:out value="${company.id}" />" /> <br />
+	<div class="data">
+			Company Corporate ID : <input type="text" readonly="readonly"
+			name="companyid" value="<c:out value="${company.id}" />" />
+	</div>
 		Registration Date : <input type="text" name="registration"
 			value="<fmt:formatDate pattern="MM/dd/yyyy" value="${company.registrationDate}" />" />
 		Company Name : <input
