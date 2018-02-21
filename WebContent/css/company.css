@@ -35,32 +35,32 @@ form {
 }
 
 input {
-    color:  #5f5f5f;
-    box-sizing: border-box;
-    width: 240px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-    padding: 10px;
-    border: 1px solid #dbdbdb;
+	color: #5f5f5f;
+	box-sizing: border-box;
+	width: 240px;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+	padding: 10px;
+	border: 1px solid #dbdbdb;
 }
 
-.label{
-    display: inline-block;
-    box-sizing: border-box;
-    color: #5F5F5F;
-    width: 180px;
-    text-align: right;
-    vertical-align: top;
-    padding: 10px 25px;
+.label {
+	display: inline-block;
+	box-sizing: border-box;
+	color: #5F5F5F;
+	width: 180px;
+	text-align: right;
+	vertical-align: top;
+	padding: 10px 25px;
 }
 
-.submitButton{
-	    display: block;
-    border-radius: 2px;
-    background-color:  #6caee0;
-    color: #ffffff;
-    font-weight: bold;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-    padding: 14px 22px;
-    border: 0;
-    margin: 10px 205px 0;
+.submitButton {
+	display: block;
+	border-radius: 2px;
+	background-color: #6caee0;
+	color: #ffffff;
+	font-weight: bold;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+	padding: 14px 22px;
+	border: 0;
+	margin: 10px 205px 0;
 }

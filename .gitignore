@@ -7,6 +7,4 @@
 *.ear
 .idea
 /bin/
-/bin/
-/bin/
 *.log
