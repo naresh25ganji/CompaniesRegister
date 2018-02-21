@@ -19,55 +19,76 @@
 			$('input[name=registration]').datepicker();
 		});
 	</script>
-	
+
 	<div class="title">
-	<h1>Add New Company</h1>
+		<h1>Add New Company</h1>
 	</div>
 	<div class="breadcrumb">
-	<a href="CompanyController?action=home">Home</a>
-	/ Add Company
+		<a href="CompanyController?action=home">Home</a> / Add Company
 	</div>
-	
+
 	<form method="POST" action='CompanyController' name="frmAddCompany">
-	<div class="data">
-			Company Corporate ID : <input type="text" readonly="readonly"
-			name="companyid" value="<c:out value="${company.id}" />" />
-	</div>
-		Registration Date : <input type="text" name="registration"
-			value="<fmt:formatDate pattern="MM/dd/yyyy" value="${company.registrationDate}" />" />
-		Company Name : <input
-            type="text" name="name"
-            value="<c:out value="${company.name}" />" /> <br /> 
-        Company Status : <input
-            type="text" name="status"
-            value="<c:out value="${company.status}" />" /> <br /> 
-        Company Class : <input
-            type="text" name="companyClass"
-            value="<c:out value="${company.companyClass}" />" /> <br /> 
-	    Company Category : <input type="text" name="category"
-            value="<c:out value="${company.category}" />" /> <br />
-        Authorized Capital : <input
-            type="text" name="authorizedCapital"
-            value="<c:out value="${company.authorizedCapital}" />" /> <br /> 
-        Paidup Capital : <input
-            type="text" name="paidupCapital"
-            value="<c:out value="${company.paidupCapital}" />" /> <br /> 
-          State   : <input
-            type="text" name="state"
-            value="<c:out value="${company.state}" />" /> <br /> 
-        Registrar : <input
-            type="text" name="registrar"
-            value="<c:out value="${company.registrar}" />" /> <br /> 
-        Business Activity : <input type="text" name="businessActivity"
-            value="<c:out value="${company.businessActivity}" />" /> <br />
-        office Address : <input
-            type="text" name="officeAddress"
-            value="<c:out value="${company.officeAddress}" />" /> <br /> 
-        Sub Category : <input
-            type="text" name="status"
-            value="<c:out value="${company.subCategory}" />" /> <br /> 	
-			
-		<br /> <input type="submit" value="Submit" />
+		<div class="data">
+			<span class="label">Company Corporate ID : </span> <input type="text"
+				readonly="readonly" name="companyid"
+				value="<c:out value="${company.id}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Registration Date : </span> <input type="text"
+				name="registration"
+				value="<fmt:formatDate pattern="MM/dd/yyyy" value="${company.registrationDate}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Company Name :</span> <input type="text"
+				name="name" value="<c:out value="${company.name}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Company Status : </span> <input type="text"
+				name="status" value="<c:out value="${company.status}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Company Class : </span> <input type="text"
+				name="companyClass"
+				value="<c:out value="${company.companyClass}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Company Category : </span> <input type="text"
+				name="category" value="<c:out value="${company.category}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Authorized Capital :</span> <input type="text"
+				name="authorizedCapital"
+				value="<c:out value="${company.authorizedCapital}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Paidup Capital : </span> <input type="text"
+				name="paidupCapital"
+				value="<c:out value="${company.paidupCapital}" />" />
+		</div>
+		<div class="data">
+			<span class="label">State : </span> <input type="text" name="state"
+				value="<c:out value="${company.state}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Registrar : </span> <input type="text"
+				name="registrar" value="<c:out value="${company.registrar}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Business Activity :</span> <input type="text"
+				name="businessActivity"
+				value="<c:out value="${company.businessActivity}" />" />
+		</div>
+		<div class="data">
+			<span class="label">office Address : </span> <input type="text"
+				name="officeAddress"
+				value="<c:out value="${company.officeAddress}" />" />
+		</div>
+		<div class="data">
+			<span class="label">Sub Category : </span> <input type="text"
+				name="status" value="<c:out value="${company.subCategory}" />" />
+		</div>
+
+		<input class="submitButton" type="submit" value="Submit" />
 	</form>
 </body>
 </html>
